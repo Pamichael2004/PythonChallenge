@@ -34,9 +34,9 @@ Total_Votes = (len(votes))
 print(f"Total Votes: {Total_Votes}")
     
     #Count each number of candidates in the candidates list
-CharlesCasperStockham = int(votes.count("CharlesCasperStockham")) 
-DianaDeGette = int(votes.count("DianaDeGette"))
-RaymonAnthonyDoane = int(votes.count("RaymonAnthonyDoane"))
+CharlesCasperStockham = int(candidates.count("Charles Casper Stockham"))
+DianaDeGette = int(candidates.count("Diana DeGette"))
+RaymonAnthonyDoane = int(candidates.count("Raymon Anthony Doane"))
        #Get a percentage of each candidates vote total
 CharlesCasperStockham_percentage = round((CharlesCasperStockham/Total_Votes) * 100, 1)
 DianaDeGette_percentage = round((DianaDeGette/Total_Votes) * 100, 1)
@@ -49,11 +49,11 @@ print(f"RaymonAnthonyDoane: {RaymonAnthonyDoane_percentage}% ({RaymonAnthonyDoan
     
     #Compare Votes and pick winner with the most votes
 if CharlesCasperStockham > DianaDeGette > RaymonAnthonyDoane:
-    Winner = "CharlesCasperStockham"
+    Winner = "Charles Casper Stockham"
 elif DianaDeGette>CharlesCasperStockham>RaymonAnthonyDoane:
-    Winner = "DianaDeGette"    
+    Winner = "Diana DeGette"    
 elif RaymonAnthonyDoane > CharlesCasperStockham > DianaDeGette:
-    Winner = "RaymonAnthonyDoane" 
+    Winner = "Raymon Anthony Doane" 
 
 print(f"Winner: {Winner}")   
 
